@@ -30,65 +30,7 @@ const renderProjects = () =>{
 }
 
 
-
-
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "Blog 1",
-    content: "Lorem Ipsum",
-    createdAt: new Date();
-    readingTime: 10,
-    imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
-  {
-    id: 2,
-    title: "Blog 1",
-    content: "Lorem Ipsum",
-    createdAt: new Date();
-    readingTime: 10,
-    imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
-  {
-    id: 3,
-    title: "Blog 1",
-    content: "Lorem Ipsum",
-    createdAt: new Date();
-    readingTime: 10,
-    imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
-  {
-    id: 4,
-    title: "Blog 1",
-    content: "Lorem Ipsum",
-    createdAt: new Date();
-    readingTime: 10,
-    imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
-];
-
-const getMinsToRead = (content) => {
-  const wordsPerMinute = 200;
-  const wordCount = content.split((/\s/)).length;
-  return Math.ceil(wordCount/wordsPerMinute);
-}
-
-
-const renderBlogPosts = () =>{
-  const blogGrid = document.getElementById("blog");
-  blogGrid.innerHTML = null;
-  if(blogGrid){
-    blogPosts.forEach((element) =>{
-      const link = `./blogdetails.html?id=${element.id}`;
-      const card = createCard(element,"col-3",link);
-      blogGrid.appendChild(card);
-    });
-  }
-  
-}
-
-const renderBlogDetails = () => {
+/*const renderBlogDetails = () => {
   const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blogId = urlParams.get("id");
@@ -114,13 +56,13 @@ if(blogId){
 
 }
 
-}
+}*/
 
 
 
-renderBlogDetails();
+//renderBlogDetails();
 
-const createCard = (element,colClass,link) => {
+  const createCard = (element,colClass,link) => {
   const cardDiv = document.createElement("div");
   cardDiv.classList = "colClass";
 
@@ -159,13 +101,13 @@ const createCard = (element,colClass,link) => {
   return cardDiv;
 }
 
-renderBlogPosts();
+
 renderProjects();
 
-const getDate = () => {
+/*const getDate = () => {
   document.getElementById("date");
   console.log(document.getElementById("date"))
-}
+}*/
 
 const loadHtml = async (elementId, filePath) => {
     try {
