@@ -10,6 +10,11 @@ const getBlogPosts = async () => {
 
 await getBlogPosts();
 
+const getLatestBlogPosts = () => {
+  const latestBlogPosts = blogPosts.slice(0, 4);
+  return latestBlogPosts;
+}
+
 const getMinsToRead = (content) => {
   const wordsPerMinute = 200;
   const wordCount = content.split((/\s/)).length;
@@ -70,3 +75,5 @@ const createCard = (element,colClass,link) => {
 }
 
 renderBlogPosts();
+
+export{getLatestBlogPosts};
