@@ -1,16 +1,16 @@
 const projects = [
   {
     id: 1,
-    title: "Project 1"
+    title: "Project 1",
     content: "Lorem Ipsum",
-    createdAt: new Date();
+    createdAt: new Date(),
     imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
+  },
   {
     id: 2,
-    title: "Project 2"
+    title: "Project 2",
     content: "Lorem Ipsum",
-    createdAt: new Date();
+    createdAt: new Date(),
     imgUrl: "https://images.unsplash.com/photo-1724590391555-e4d81815e0af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]

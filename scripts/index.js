@@ -26,3 +26,4 @@ latestBlogPosts.forEach((blogPost) => {
 
 renderProjectsSection();
 renderLatestBlogPostsSection();
+
